@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Notification email template</title>
+</head>
+
+<body bgcolor="#8d8e90">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#8d8e90">
+  <tr>
+    <td><table width="600" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" align="center">
+        <tr>
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="61"><img src="cid:bola" width="61" height="76" border="0" alt=""/></a></td>
+                <td width="144"><img src="cid:cnova" width="135" height="35" border="0" alt=""/></a></td>
+                <td width="393"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td height="46" align="right" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="67%" align="right"><font style="font-family:'Myriad Pro', Helvetica, Arial, sans-serif; color:#68696a; font-size:8px; text-transform:uppercase"><a href= "http://zabbix-server01.dc.nova/zabbix" style="color:#68696a; text-decoration:none"><strong>Zabbix Server</strong></a></font></td>
+                            <td width="29%" align="right"><font style="font-family:'Myriad Pro', Helvetica, Arial, sans-serif; color:#68696a; font-size:8px"><a href= "http://servicedesk.suanova.com/HomePage.do" style="color:#68696a; text-decoration:none; text-transform:uppercase"><strong>ServiceDesk</strong></a></font></td>
+                            <td width="4%">&nbsp;</td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td height="30"><img src="cid:linha" width="390" height="30" border="0" alt=""/></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td align="center">&nbsp;</td>
+        </tr>
+        <tr>
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="10%">&nbsp;</td>
+                <td width="80%" align="left" valign="top"><font style="font-family: Verdana, 'Times New Roman', Times, serif; color:#010101; font-size:15px"><strong>{TRIGGER.NAME}</strong></font><br /><br />
+                  <font style="font-family: Verdana, Geneva, sans-serif; color:#666766; font-size:13px; line-height:21px">
+				  Servidor: <b>{HOST.NAME}</b><br/>
+				  Item: <b>{ITEM.NAME1}</b><br/>
+				  Valor <b>{ITEM.VALUE1}</b><br>
+				  </font>
+					<img src="cid:imagem_grafico" alt="Grafico Alerta" style="display: block;" border="2"/>
+				  </td>
+                <td width="10%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td align="right" valign="top"><table width="108" border="0" cellspacing="0" cellpadding="0">
+                  <br/>
+				  <tr>
+                    <td><img src="cid:banner" width="108" height="9" style="display:block" border="0" alt=""/></td>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="middle" bgcolor="{cor_bg_hex}"><font style="font-family: Georgia, 'Times New Roman', Times, serif; color:#ffffff; font-size:14px"><em><a href="http://zabbix-server01.dc.nova/zabbix/history.php?action=showgraph&itemids[]={ITEM.ID}" target="_blank" style="color:#ffffff; text-decoration: underline">Clique aqui</a></em></font></td>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="middle" bgcolor="{cor_bg_hex}"><font style="font-family: Georgia, 'Times New Roman', Times, serif; color:#ffffff; font-size:15px"><strong><a href="http://zabbix-server01.dc.nova/zabbix/history.php?action=showgraph&itemids[]={ITEM.ID}" target="_blank" style="color:#ffffff; text-decoration:none"><em>Detalhes Grafico</em></a></strong></font></td>
+                  </tr>
+                  <tr>
+                    <td height="10" align="center" valign="middle" bgcolor="{cor_bg_hex}"> </td>
+                  </tr>
+                </table></td>
+                <td>&nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><img src="cid:listras" width="598" height="7" style="display:block" border="0" alt=""/></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<font style="font-family: Verdana, Geneva, sans-serif; color:#666766; font-size:13px; line-height:18px">
+			<center>
+             Alerta gerado pelo Zabbix, em caso de dúvidas contate <i><a href="mailto:ti.monitoria@cnova.com">ti.monitoria@cnova.com</i></a>
+            </center></font>
+          </table></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+         <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+</body>
+</html>
