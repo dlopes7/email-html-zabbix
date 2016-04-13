@@ -25,7 +25,7 @@ def get_image_by_item_id(item_id):
                'autologin': 1,
                'enter': 'Sign in'}
 
-    print('Fazendo o login...')
+    print('Fazendo o login............')
     login = s.post('http://zabbix-server01.dc.nova/zabbix/index.php', data=payload)
     login.headers['Set-Cookie']
 
